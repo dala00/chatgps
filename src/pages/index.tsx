@@ -24,13 +24,19 @@ export default function Home() {
     })
   }, [])
 
+  const title = 'ChatGPS'
+  const description = 'ChatでGPSを確認できるChatGPSです。'
+
   return (
     <>
       <Head>
-        <title>ChatGPS</title>
-        <meta name="description" content="ChatでGPSを確認できるChatGPSです。" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta name="twitter:card" content="summary"></meta>
       </Head>
       <Container mt={8}>
         <Heading>ChatGPS</Heading>
