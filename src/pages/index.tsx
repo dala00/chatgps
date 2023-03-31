@@ -25,7 +25,7 @@ export default function Home() {
   }, [])
 
   const title = 'ChatGPS'
-  const description = 'ChatでGPSを確認できるChatGPSです。'
+  const description = '今流行りっぽいChatのあれを自分で作ったサイトです'
 
   return (
     <>
